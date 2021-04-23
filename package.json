@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/momo427/meet-my-team-generator/issues"
   },
-  "homepage": "https://github.com/momo427/meet-my-team-generator#readme"
+  "homepage": "https://github.com/momo427/meet-my-team-generator#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
