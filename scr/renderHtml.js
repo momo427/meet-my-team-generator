@@ -13,10 +13,11 @@ const generateEmployees = (teamList) => {
     if (teamList[i].getRole() === "manager") {
       employee += `<i class="fas fa-crown"></i> </span> ${teamList[i].role}
             `;
-    } else if (teamList[i].getRole() === "Engineer") {
+    } else if (teamList[i].getRole() === "engineer") {
       employee += `<i class="fas fa-tools"></i> </span> ${teamList[i].role}
             `;
     } else {
+      teamList[i].getRole() === "intern";
       employee += `<i class="fas fa-pencil-alt"></i> </span> ${teamList[i].role}
             `;
     }
@@ -28,16 +29,17 @@ const generateEmployees = (teamList) => {
                         <li class="list-group-item">ID: ${teamList[i].id}</li>
                         <li class="list-group-item">Email: <a href="mailto:${teamList[i].email}">${teamList[i].email}</a></li>
                         `;
-    if (teamList[i].getEmployee() === "manager") {
+    if (teamList[i].officeNumber) {
       employee += `<li class="list-group-item">Office Number: ${teamList[i].officeNumber}</li>
             `;
-    }else if (teamList[i].getRole() === "Engineer") {
+    } else if (teamList[i].username) {
       employee += `<li class="list-group-item">GitHub: <a href="https://github.com/${teamList[i].username}">${teamList[i].username}</a></li>
             `;
-    }else{ (teamList[i].getIntern() === "Intern") 
+    } else {
+      teamList[i].school;
       employee += `<li class="list-group-item">School: ${teamList[i].school}</li>
             `;
-    };
+    }
     employee += `       </ul>
                 </div>
             </div>
@@ -48,7 +50,7 @@ const generateEmployees = (teamList) => {
   return generatedEmployees.join("");
 };
 
-module.exports = teamList => {
+module.exports = (teamList) => {
   return `
     <!DOCTYPE html>
     <html lang="en">

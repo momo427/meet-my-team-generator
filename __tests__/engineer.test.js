@@ -1,6 +1,6 @@
 const engineer = require('../lib/engineer');
 
-const testEngineer = new engineer('name', 'id', 'email', 'github');
+const testEngineer = new engineer('name', 'id', 'email', 'username');
 const testRole = 'engineer';
 
 test('getName returns name', () => {
