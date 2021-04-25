@@ -3,8 +3,8 @@
 ## Desription
 Using node and javascript I have created a application that takes in a users responses and renders the information into a team profile. Purpose: You can quickly and easily create a team profile by using a command-line application to generate one. This allows the project managers to quickly showcase their teams skills.
 
- [![Video](https://youtu.be/KUT6UgW2Aes)]
 
+[![Video](https://youtu.be/KUT6UgW2Aes)](https://youtu.be/KUT6UgW2Aes)
 
 ## Table of contents
  * [Installation](#Installation)
