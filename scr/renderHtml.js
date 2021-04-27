@@ -1,5 +1,6 @@
 const generateEmployees = (teamList) => {
   const generatedEmployees = [];
+
   for (let i = 0; i < teamList.length; i++) {
     let employee = `<div class="col-4 d-flex justify-content-center">
             <div class="card" style="width: 23rem;">
@@ -29,16 +30,15 @@ const generateEmployees = (teamList) => {
                         <li class="list-group-item">ID: ${teamList[i].id}</li>
                         <li class="list-group-item">Email: <a href="mailto:${teamList[i].email}">${teamList[i].email}</a></li>
                         `;
-    if (teamList[i] === teamList[i].officenumber) {
-      employee += `<li class="list-group-item">Office Number: ${teamList[i].officenumber}</li>
-            `;
-    } else if (teamList[i]=== teamList[i].username) {
-      employee += `<li class="list-group-item">GitHub: <a href="https://github.com/${teamList[i].username}">${teamList[i].username}</a></li>
-            `;
-    } else {
-      (teamList[i]=== teamList[i].school);
-      employee += `<li class="list-group-item">School: ${teamList[i].school}</li>
-            `;
+    if (teamList[i].officeNumber) {
+      employee += `<li class="list-group-item">Office Number: ${teamList[i].officeNumber}</li>`
+    }
+    if (teamList[i].username) {
+      employee += `<li class="list-group-item">GitHub: <a href="https://github.com/${teamList[i].username}">${teamList[i].username}</a></li>`
+    } 
+    if
+      (teamList[i].school){
+      employee += `<li class="list-group-item">School: ${teamList[i].school}</li>`
     }
     employee += `       </ul>
                 </div>
